@@ -1,0 +1,66 @@
+.mybutton {
+    color: black;
+    font-family: Pacifico;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.hearder_container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.hearder {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hearder_logo {
+    margin-top: 5px;
+    align-items: center;
+    width: 26px;
+    height: 29px;
+    margin-left: 100.0px;
+    display: flex;
+}
+
+.hearder_nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.hearder_icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .hearder {
+        padding: 20%;
+    }
+
+    .hearder_icons {
+        padding: 20%;
+    }
+
+    .hearder_logo {
+        padding: 20%;
+    }
+
+    .hearder_logo {
+        padding: 20%;
+        margin-bottom: 10px;
+    }
+}
