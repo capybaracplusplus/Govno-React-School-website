@@ -1,8 +1,10 @@
 function Footer_lower() {
     return (
         <>
-        <h1>Контакты:</h1>
+        <div className="footer_lower">
+            <h1>Контакты:</h1>
         <p>Дискорд Телега Вконтакте Одноклассники</p>
+        </div>
         </>
     )
 }

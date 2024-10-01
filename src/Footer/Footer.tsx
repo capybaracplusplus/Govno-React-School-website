@@ -7,11 +7,11 @@ function Footer() {
     return (
         <>
             <div className="footer_container">
-                <div>
+                <div className="top_lower_footer">
                     <Footer_top />
                     <Footer_lower />
                 </div>
-                <div>
+                <div className="logo_footer">
                     <img src = {faviconSrc} />
                     <p>Название школы</p>
                 </div>

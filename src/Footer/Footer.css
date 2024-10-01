@@ -1,5 +1,16 @@
 .footer_container{
     color:aquamarine;
     background: linear-gradient(92.14deg, rgba(31, 30, 41, 0.95) 7.09%, rgba(58, 66, 178, 0.95) 36.34%);
-    height: 198px;                                                                                                                                                                                                         
+    height: 198px;                           
+    display: flex;
+    align-items: center;
+    gap: 100px;                                                                                                                                                            
+}
+
+.top_lower_footer{
+                                                                                                                                          
+}
+
+.logo_footer{
+
 }
