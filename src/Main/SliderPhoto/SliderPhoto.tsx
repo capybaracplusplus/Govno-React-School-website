@@ -1,5 +1,6 @@
 import './SliderPhoto.css'
 
+
 function SliderPhoto() {
     return (
         <>
