@@ -12,7 +12,6 @@ import PhotoOfDirector from './pages/Main/PhotoOfDirector/PhotoOfDirector';
 function App() {
     return (
         <>
-            <Header /> 
             <main className='Main'>
                 <Routes>
                     <Route path="/" element={
@@ -27,7 +26,6 @@ function App() {
                     <Route path="/about" element={<About />} />
                 </Routes>
             </main>
-            <Footer />
         </>
     );
 }
