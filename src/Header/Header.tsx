@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useLocation } from 'react-router-dom';
-import React from 'react';
+//import React from 'react';
 
 export interface ButtonProps {
     name: string;
