@@ -1,5 +1,6 @@
 import "./Header.css";
 import { useLocation } from 'react-router-dom';
+import faviconSrc from "./favicon.png"
 //import React from 'react';
 
 export interface ButtonProps {
@@ -26,7 +27,7 @@ function Header() {
             <div className='hearder'>
                 <nav className='hearder_nav'>
                     <div className='hearder_logo'>
-                        <img src="/favicon.png" alt="Company Logo"></img>
+                        <img src={faviconSrc} alt="Company Logo"></img>
                     </div>
                     <Button name="Главная" link="/" />
                     <Button name="О нас" link="/about" />

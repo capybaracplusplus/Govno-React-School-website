@@ -2,7 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import About from './pages/About/About';
 import Header from './Header/Header.tsx';
 import Footer from './Footer/Footer.tsx';
@@ -16,7 +16,7 @@ import Vacancies from './pages/Vacancies/vacancies.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Header/>
       <Routes>
         <Route path="/" element={<App />} />
@@ -29,6 +29,6 @@ createRoot(document.getElementById('root')!).render(
         <Route path='vacancies' element={<Vacancies />} />
       </Routes>
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
