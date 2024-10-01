@@ -1,5 +1,6 @@
 import "./Header.css";
-import { useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
+import {NavLink} from "react-router-dom"
 import faviconSrc from "./favicon.png"
 //import React from 'react';
 
@@ -14,9 +15,9 @@ export function Button(props: ButtonProps) {
 
     return (
         <>
-            <a className={`mybutton ${isActive ? 'active' : ''}`} href={props.link}>
+            <NavLink className={`mybutton ${isActive ? 'active' : ''}`} to={props.link}>
                 {props.name}
-            </a>
+            </NavLink>
         </>
     )
 }
@@ -39,13 +40,13 @@ function Header() {
                     <Button name="Авторизоваться" link="/login" />
                 </nav>
                 <div className='hearder_icons'>
-                    <a className="icon_h" href="https://discord.com/"> 
+                    <a target = "_blank" className="icon_h" href="https://discord.com/"> 
                         <img src="https://img.icons8.com/?size=50&id=25627&format=png" alt="DS icon"></img>
                     </a>
-                    <a className="icon_h" href="https://web.telegram.org/a/">
+                    <a target = "_blank" className="icon_h" href="https://web.telegram.org/a/">
                         <img src="https://img.icons8.com/?size=50&id=9R1sV3QvY18K&format=png" alt="TG icon"></img>
                     </a>
-                    <a className="icon_h" href="https://vk.com/">
+                    <a target = "_blank" className="icon_h" href="https://vk.com/">
                         <img src="https://img.icons8.com/?size=50&id=38514&format=png" alt="VK icon"></img>
                     </a>
                 </div>
