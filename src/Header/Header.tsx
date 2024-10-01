@@ -1,5 +1,6 @@
 import "./Header.css";
 import { useLocation } from 'react-router-dom';
+import React from 'react';
 
 export interface ButtonProps {
     name: string;
@@ -43,7 +44,7 @@ function Header() {
                     <a className="icon_h" href="https://web.telegram.org/a/">
                         <img src="https://img.icons8.com/?size=50&id=9R1sV3QvY18K&format=png" alt="TG icon"></img>
                     </a>
-                    <a className="icon_h" href="">
+                    <a className="icon_h" href="https://vk.com/">
                         <img src="https://img.icons8.com/?size=50&id=38514&format=png" alt="VK icon"></img>
                     </a>
                 </div>

@@ -21,19 +21,19 @@
 .hearder_nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* Расстояние между элементами навигации */
+    gap: 20px;
     flex-grow: 1;
 }
 
 .hearder_logo {
-    width: 30px; /* Размер логотипа */
+    width: 30px;
     height: auto;
     display: flex;
     align-items: center;
 }
 
 .hearder_logo img {
-    width: 100%; /* Логотип занимает всю ширину контейнера */
+    width: 100%;
     height: auto;
 }
 
@@ -55,7 +55,6 @@
     border-radius: 50%;
 }
 
-/* Стили для кнопок навигации */
 .mybutton {
     color: black;
     font-family: Pacifico;
