@@ -6,35 +6,35 @@
     text-align: center;
     margin-top: 10px;
     padding: 10px 0;
-    border-bottom: 1px solid lightgray; /* Добавим нижнюю границу */
+    border-bottom: 1px solid lightgray;
 }
 
 .hearder {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Элементы будут распределены */
+    justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Ограничим максимальную ширину контейнера */
+    max-width: 1200px;
     padding: 0 20px;
 }
 
+.hearder_nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Расстояние между элементами навигации */
+    flex-grow: 1;
+}
+
 .hearder_logo {
-    width: 50px; /* Увеличим размер логотипа */
+    width: 30px; /* Размер логотипа */
     height: auto;
     display: flex;
     align-items: center;
 }
 
 .hearder_logo img {
-    width: 100%; /* Логотип занимает всю область блока */
+    width: 100%; /* Логотип занимает всю ширину контейнера */
     height: auto;
-}
-
-.hearder_nav {
-    display: flex;
-    gap: 20px; /* Увеличим отступы между элементами навигации */
-    flex-grow: 1;
-    justify-content: center; /* Выровняем по центру */
 }
 
 .hearder_icons {
@@ -44,14 +44,14 @@
 }
 
 .icon_h img {
-    width: 40px; /* Уменьшим размер иконок */
+    width: 40px;
     height: 40px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
 }
 
 .icon_h:hover {
-    background-color: #f0f0f0; /* Светлый фон при наведении */
+    background-color: #f0f0f0;
     border-radius: 50%;
 }
 

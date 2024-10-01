@@ -23,10 +23,10 @@ function Header() {
     return (
         <header className="hearder_container">
             <div className='hearder'>
-                <div className='hearder_logo'>
-                    <img src="/favicon.png" alt="Company Logo"></img>
-                </div>
                 <nav className='hearder_nav'>
+                    <div className='hearder_logo'>
+                        <img src="/favicon.png" alt="Company Logo"></img>
+                    </div>
                     <Button name="Главная" link="/" />
                     <Button name="О нас" link="/about" />
                     <Button name="Обучение" link="/education" />
@@ -53,3 +53,4 @@ function Header() {
 }
 
 export default Header;
+
