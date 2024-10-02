@@ -3,7 +3,7 @@ import './App.css';
 //import Header from './Header/Header';
 import { Routes, Route } from 'react-router-dom';
 import About from './pages/About/About';
-import Question from './pages/Main/Question/Question';
+import Question from './pages/Main/Question/Accordion';
 import Teachgers_Slider from './pages/Main/Teachgers_Slider/Teachgers_Slider';
 import SliderPhoto from './pages/Main/SliderPhoto/SliderPhoto';
 import Achievements from './pages/Main/Achievements/Achievements';
