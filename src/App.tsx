@@ -16,9 +16,9 @@ function App() {
                         <>
                             <SliderPhoto />
                             <div className='DirectorPhoto_Teachgers_Slider container'>
-                                 <Achievements />
-                                 <DirectorPhoto /> 
-                            </div><Teachgers_Slider /> 
+                                <Achievements />
+                                <DirectorPhoto />
+                            </div><Teachgers_Slider />
                             <Question />
                         </>
                     } />

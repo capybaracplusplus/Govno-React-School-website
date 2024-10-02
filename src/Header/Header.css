@@ -90,6 +90,10 @@
 }
 
 
+.mobileMenu{
+    z-index: 999;
+}
+
 @media screen and (max-width: 850px){
     .icon_h {display: none;}
 }

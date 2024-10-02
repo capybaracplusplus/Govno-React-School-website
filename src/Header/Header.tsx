@@ -1,12 +1,13 @@
 import "./Header.css";
-import {useLocation } from 'react-router-dom';
-import {NavLink} from "react-router-dom"
+import { useLocation } from 'react-router-dom';
+import { NavLink } from "react-router-dom"
 import faviconSrc from "./favicon.png"
-//import React from 'react';
+import { useState } from 'react';
 
 export interface ButtonProps {
     name: string;
     link: string;
+    className: string;
 }
 
 export function Button(props: ButtonProps) {
@@ -15,14 +16,22 @@ export function Button(props: ButtonProps) {
 
     return (
         <>
-            <NavLink className={`mybutton ${isActive ? 'active' : ''}`} to={props.link}>
+            <NavLink className={`mybutton ${isActive ? 'active' : ''} ${props.className}`} to={props.link}>
                 {props.name}
             </NavLink>
         </>
     )
 }
 
+Button.defaultProps = {
+    className: ""
+};
+
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    const clickBtnMenu = () => {
+        setIsOpen(!isOpen);
+    }
     return (
         <header className="hearder_container">
             <div className='hearder'>
@@ -30,23 +39,47 @@ function Header() {
                     <div className='hearder_logo'>
                         <img src={faviconSrc} alt="Company Logo"></img>
                     </div>
-                    <Button name="Главная" link="/" />
-                    <Button name="О нас" link="/about" />
-                    <Button name="Обучение" link="/education" />
-                    <Button name="Педсостав" link="/staff" />
-                    <Button name="Вакансии" link="/vacancies" />
-                    <Button name="Новости" link="/news" />
-                    <Button name="Контакты" link="/contacts" />
-                    <Button name="Авторизоваться" link="/login" />
+                    <button id="menu-btn" className="block md:hidden focus:outline-none" onClick={clickBtnMenu}>
+                        <svg className="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                    <div className="hidden md:flex space-x-8">
+                        <Button name="Главная" link="/" />
+                        <Button name="О нас" link="/about" />
+                        <Button name="Обучение" link="/education" />
+                        <Button name="Педсостав" link="/staff" />
+                        <Button name="Вакансии" link="/vacancies" />
+                        <Button name="Новости" link="/news" />
+                        <Button name="Контакты" link="/contacts" />
+                        <Button name="Авторизоваться" link="/login" />
+                    </div>
+
+
                 </nav>
+
+                {isOpen && (
+                    <div id="mobile-menu" className="md:hidden bg-white shadow-md mobileMenu">
+                        <Button className="block px-4 py-2" name="Главная" link="/" />
+                        <Button className="block px-4 py-2" name="О нас" link="/about" />
+                        <Button className="block px-4 py-2" name="Обучение" link="/education" />
+                        <Button className="block px-4 py-2" name="Педсостав" link="/staff" />
+                        <Button className="block px-4 py-2" name="Вакансии" link="/vacancies" />
+                        <Button className="block px-4 py-2" name="Новости" link="/news" />
+                        <Button className="block px-4 py-2" name="Контакты" link="/contacts" />
+                        <Button className="block px-4 py-2" name="Авторизоваться" link="/login" />
+                    </div>
+                )}
+
                 <div className='hearder_icons'>
-                    <a target = "_blank" className="icon_h" href="https://discord.com/"> 
+                    <a target="_blank" className="icon_h" href="https://discord.com/">
                         <img src="https://img.icons8.com/?size=50&id=25627&format=png" alt="DS icon"></img>
                     </a>
-                    <a target = "_blank" className="icon_h" href="https://web.telegram.org/a/">
+                    <a target="_blank" className="icon_h" href="https://web.telegram.org/a/">
                         <img src="https://img.icons8.com/?size=50&id=9R1sV3QvY18K&format=png" alt="TG icon"></img>
                     </a>
-                    <a target = "_blank" className="icon_h" href="https://vk.com/">
+                    <a target="_blank" className="icon_h" href="https://vk.com/">
                         <img src="https://img.icons8.com/?size=50&id=38514&format=png" alt="VK icon"></img>
                     </a>
                 </div>
