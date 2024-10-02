@@ -1,0 +1,22 @@
+.achievements {
+    max-width: 465px;
+}
+  
+  .achievements-title {
+    font-size: 24px;
+    color: #b03030;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+  }
+  
+  .achievement-item {
+    background: linear-gradient(90deg, #3A42B2 0%, #1F1E29 100%);
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+  
