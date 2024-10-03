@@ -35,7 +35,7 @@ function Header() {
     return (
         <header>
             <nav className=' p-5'>
-                <div className="space-x-8 container mx-auto flex justify-between items-center">
+                <div className="space-x-8 container mx-auto flex justify-center items-center">
 
                     <img className="mr-0.6" src={faviconSrc} alt="Company Logo"></img>
 
