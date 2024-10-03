@@ -33,13 +33,9 @@ function Header() {
         setIsOpen(!isOpen);
     }
     return (
-        // hearder_container          className="container h-10"
         <header>
-            {/* className='hearder' */}
-            {/* hearder_nav */}
             <nav className=' p-5'>
                 <div className="space-x-8 container mx-auto flex justify-between items-center">
-                    {/* hearder_logo */}
 
                     <img className="mr-0.6" src={faviconSrc} alt="Company Logo"></img>
 
@@ -72,12 +68,12 @@ function Header() {
                             <img src="https://img.icons8.com/?size=50&id=38514&format=png" alt="VK icon"></img>
                         </a>
                     </div>
+                    
                 </div>
 
             </nav>
 
             {isOpen && (
-                // mobileMenu
                 <div id="mobile-menu" className="md:hidden bg-white shadow-md ">
                     <Button className="block px-4 py-2" name="Главная" link="/" />
                     <Button className="block px-4 py-2" name="О нас" link="/about" />
@@ -87,7 +83,6 @@ function Header() {
                     <Button className="block px-4 py-2" name="Новости" link="/news" />
                     <Button className="block px-4 py-2" name="Контакты" link="/contacts" />
                     <Button className="block px-4 py-2" name="Авторизоваться" link="/login" />
-
                 </div>
             )}
 
