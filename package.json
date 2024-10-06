@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --config configs/vite.config.ts",
-    "build": "tsc --project configs/tsconfig.json && vite build",
+    "build": "tsc --project configs/tsconfig.json && vite build --config configs/vite.config.ts",
     "preview": "vite preview"
   },
   "homepage": "https://capybaracplusplus.github.io/Govno-React-School-website",
