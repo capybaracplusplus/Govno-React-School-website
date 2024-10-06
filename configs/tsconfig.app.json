@@ -21,7 +21,8 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./../src"
+    "baseUrl": "./../src",
+    "outDir": "./dist"
   },
   "include": [
     "./../src"
