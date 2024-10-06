@@ -4,17 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite --config configs/vite.config.ts",
+    "build": "tsc --project configs/tsconfig.json",
     "preview": "vite preview"
   },
   "homepage": "https://capybaracplusplus.github.io/Govno-React-School-website",
   "dependencies": {
+    "@types/node": "^22.7.4",
     "@types/react-slick": "^0.23.13",
+    "postcss": "^8.4.47",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "react-slick": "^0.30.2"
+    "react-slick": "^0.30.2",
+    "vite-tsconfig-paths": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
