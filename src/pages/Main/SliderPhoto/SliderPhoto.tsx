@@ -1,5 +1,5 @@
 import './SliderPhoto.css'
-import Carousel from '../../../Carousel/Carousel';
+import Carousel from '../../../components/Carousel/Carousel';
 
 const images = [
     "https://avatars.mds.yandex.net/get-altay/4530524/2a00000179e64be106f8902aa9d99c6d4baf/L_height",
