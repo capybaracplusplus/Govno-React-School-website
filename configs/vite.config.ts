@@ -7,7 +7,7 @@ export default defineConfig({
   base: './',
   plugins: [react(), tsconfigPaths()],
   build: {
-    outDir: "../dist",
+    outDir: "dist",
     emptyOutDir: true,
   },
   css: {
