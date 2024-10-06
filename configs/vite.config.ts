@@ -4,7 +4,7 @@ import * as path from 'path'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
-  base: '../',
+  base: '',
   plugins: [react(), tsconfigPaths()],
   build: {
     outDir: "../dist",
