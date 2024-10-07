@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Accordion.css';
+import React from 'react';
 
 interface AccordionItemProps {
   question: string;

@@ -1,7 +1,8 @@
 import "./Header.css";
-import faviconSrc from "./favicon.png"
+import faviconSrc from "./pic/favicon.png"
 import { useState } from 'react';
 import Button from "../components/Button/Button";
+import React from "react";
 
 
 function Header() {

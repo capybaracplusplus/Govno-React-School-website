@@ -1,17 +1,21 @@
-html,body{
+html,
+body {
     box-sizing: border-box;
 }
 
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     box-sizing: inherit;
 }
 
-body{
+body {
     position: relative;
     min-height: 100vh;
 
 }
-body::after{
+
+body::after {
     background: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,13 +29,13 @@ body::after{
     z-index: -999;
 }
 
-main{
+main {
     min-height: calc(100vh - 236px)
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;  
+    padding: 0 10px;
 }

@@ -1,3 +1,4 @@
+import React from 'react';
 import './Teachgers_Slider.css'
 
 function Teachgers_Slider() {

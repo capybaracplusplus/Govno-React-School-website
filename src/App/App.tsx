@@ -6,6 +6,7 @@ import Teachgers_Slider from './../pages/Main/Teachgers_Slider/Teachgers_Slider'
 import SliderPhoto from './../pages/Main/SliderPhoto/SliderPhoto';
 import Achievements from './../pages/Main/Achievements/Achievements';
 import DirectorPhoto from './../pages/Main/DirectorPhoto/DirectorPhoto';
+import React from 'react';
 
 function App() {
     return (

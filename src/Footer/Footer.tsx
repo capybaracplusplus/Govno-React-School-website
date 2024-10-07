@@ -1,7 +1,8 @@
 import "./Footer.css"
-import Footer_top from "./Footer_top/Footer_top"
-import Footer_lower from "./Footer_lower/Footer_lower"
-import faviconSrc from "./Pic/favicon.png"
+import Footer_top from "./footerTop/Footer_top"
+import Footer_lower from "./footerLower/Footer_lower"
+import faviconSrc from "./pic/favicon.png"
+import React from "react"
 
 function Footer() {
     return (
@@ -12,7 +13,7 @@ function Footer() {
                     <Footer_lower />
                 </div>
                 <div className="logo_footer">
-                    <img src = {faviconSrc} />
+                    <img src={faviconSrc} />
                     <p>Название школы</p>
                 </div>
             </div>
