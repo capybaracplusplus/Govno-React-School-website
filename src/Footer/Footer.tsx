@@ -1,7 +1,7 @@
 import "./Footer.css"
 import Footer_top from "./Footer_top/Footer_top"
 import Footer_lower from "./Footer_lower/Footer_lower"
-import faviconSrc from "./Pic/favicon.png"
+import faviconSrc from "./favicon.png"
 
 function Footer() {
     return (

@@ -1,8 +1,31 @@
 import "./Header.css";
+import { useLocation } from 'react-router-dom';
+import { NavLink } from "react-router-dom"
 import faviconSrc from "./favicon.png"
 import { useState } from 'react';
-import Button from "../components/Button/Button";
 
+export interface ButtonProps {
+    name: string;
+    link: string;
+    className: string;
+}
+
+export function Button(props: ButtonProps) {
+    const location = useLocation();
+    const isActive = location.pathname === props.link;
+
+    return (
+        <>
+            <NavLink className={`mybutton ${isActive ? 'active' : ''} ${props.className}`} to={props.link}>
+                {props.name}
+            </NavLink>
+        </>
+    )
+}
+
+Button.defaultProps = {
+    className: ""
+};
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +68,7 @@ function Header() {
                             <img src="https://img.icons8.com/?size=50&id=38514&format=png" alt="VK icon"></img>
                         </a>
                     </div>
-
+                    
                 </div>
 
             </nav>
