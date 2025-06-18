@@ -1,4 +1,4 @@
-# Запуск проекта с использованием Docker
+# Running a Project Using Docker
 ```bash
 git clone https://github.com/capybaracplusplus/Govno-React-School-website.git
 
